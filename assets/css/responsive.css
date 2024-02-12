@@ -1,0 +1,11 @@
+@media (max-width:750px) {
+    .layout-grid {
+        flex-direction: column;
+        transition: 1s linear;
+    }
+}
+@media (max-width:450px) {
+    .credit {
+        font-size: 12px;
+    }
+}

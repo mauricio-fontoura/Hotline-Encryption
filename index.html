@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hot Line</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/variables.css">
+
+</head>
+
+<body>
+    <div class="wrapper--container">
+        <header class="bar-presentation">
+            <img src="./assets/image/Hot Line logo.svg" style="height:90px;" alt="Logo">
+            <div class="bar-presentation--menu">
+                <img src="./assets/image/Icon Config.png" alt="configuração" style="width: 60px;">
+
+                <div class="bar-menu-items" style="display: none; flex-direction: column;  gap: 10px;">
+                    <button>teste 1</button>
+                    <button>teste 2</button>
+                    <button>test 3</button>
+                    <button>test 4</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="wrapper main">
+            <div class="layout-grid">  
+                <div class="column style-page">
+                    <section class="style-encryption-page encryption-text">
+                        <textarea class="encryption-input-text"  id="input-text" placeholder="Digite seu texto aqui" spellcheck="false"></textarea>
+
+                        <div class="button-container">
+                            <button onclick="MakeCryptografic()" class="style-btn">Criptografia</button>
+                            <button class="style-btn" >Descriptografia</button>
+                        </div>
+                        <div class="encryption-text--caution">
+                            <img src="./assets/image/bi_exclamation-circle-fill.png" alt="">
+                            Apenas letras minúsculas e sem acento.
+                        </div>
+                    </section>
+                </div>
+                
+                <div class="column style-page">
+                    <section class="not-found-text selection" id="page-not-found"> <!-- teste-->
+                        <h1>Nenhuma mensagem encontrada</h1>
+                        <p>Digite um texto que você deseja criptografar.</p>
+                    </section>
+                    <section class="style-encryption-page    encryption-decoder" id="page-decoder">
+
+                        <p class="encryption-decoder-show" id="write-encryption"></p>
+
+                        <div class="button-container-copy">
+                            <button class="style-btn">Copiar</button>
+                            <span id="" style="color: brown; display: none;">Texto copiado!</span>
+                        </div>
+                    </section>
+
+                </div>
+           </div>
+        </main>
+        <footer class="wrapper credit">
+            <span>Desenvolvido por <a href="">Maurício Fontoura</a> ©</span>
+        </footer>
+    </div>
+    <script src="./assets/script/app.js"></script>
+</body>
+</html>

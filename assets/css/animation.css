@@ -1,0 +1,38 @@
+@keyframes rainbowShow {
+    
+    0% {
+        box-shadow: 1px 1px 7px hsl(239, 100%, 60%);
+    }
+    25% {
+        box-shadow: 1px 1px 7px hsl(316, 100%, 60%);
+    }
+    50% {
+        box-shadow: 1px 1px 7px hsl(87, 100%, 60%);
+    }
+    75% {
+        box-shadow: 1px 1px 7px hsl(0, 100%, 60%);
+    }
+    100% {
+        box-shadow: 1px 1px 7px hsl(239, 100%, 60%);
+    }
+}
+
+/* ------------------------ HOVES ---------------------------------*/
+
+.style-btn:hover {
+    cursor: pointer;
+    background-color: #223a01;
+    box-shadow: 0px 2px 0px #0a110048;
+    transform: translateY(3px);
+    transition: 0.1s linear;
+   
+}
+
+/* ---------------------- HEADER ==> Menu  ------------------------*/
+.bar-presentation--menu:hover {
+    background-color: #282828;
+    display: flex;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}

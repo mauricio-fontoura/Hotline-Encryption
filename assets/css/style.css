@@ -1,0 +1,127 @@
+
+body {
+    margin: 0;
+     background-color: #1f1f1f;
+     color: #ffff;
+}
+/*--------------------- Configuração Estrutura --------------------*/
+.wrapper--container {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+}
+
+.wrapper {
+    display: flex;
+}
+.wrapper > * {
+    flex: 1;
+}
+
+.main {
+    flex-grow: 1;
+    margin-block: 1rem;
+}
+.layout-grid {
+    display: flex;
+    gap: 1rem;
+}
+
+.column {
+    display: flex;
+    flex: 1;
+    margin-inline: 2rem;
+}
+
+.style-page {
+    display: flex;
+    background:linear-gradient(to bottom left, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.033));
+    border-radius: 10px;
+    animation: rainbowShow 30s linear infinite;
+    
+    padding: 1rem;
+    gap: 1rem;
+}
+/*------------------- Configuração Barra apresentação -------------*/
+.bar-presentation {
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   padding-inline: 0.7rem;
+}
+/*--------------------- Configuração caution text -----------------*/
+.not-found-text {
+    display: none;
+    text-align: center;
+}
+/*--------------------- Configuração Criptografia -----------------*/
+.style-encryption-page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 1;
+}
+.encryption-input-text{
+    flex-grow: 1;
+    
+    resize: none;
+    letter-spacing: 2px;
+    line-height: 1.2rem;
+    color: #ffffff;
+    background-color: #1f1f1f00;
+}
+.encryption-decoder {
+    display: none;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: #67b400;
+    background-color: aliceblue;
+}
+.encryption-decoder-show {
+    color: #101010;
+}
+/*--------------------- Configuração botões -----------------------*/
+.style-btn {
+    width: 120px;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: 0.1s linear;
+    background-color: #67b400;
+    box-shadow: 0px 5px 0px #66b4005e;
+}
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-block-start: 1rem;
+}
+
+.button-container-copy{
+  background-color: #1f1f1f;
+  display: flex;
+  margin-inline: auto;
+  border-radius: 10px 10px 0 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem;
+}
+.encryption-text--caution {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-block-start:8px;
+    font-size: 0.7rem;
+}
+
+.selection {
+    display: flex;
+    flex-direction: column;
+}
+/*--------------------------- Rodapé ------------------------------*/
+.credit {
+    display: flex;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding-block: 0.2rem;
+}
