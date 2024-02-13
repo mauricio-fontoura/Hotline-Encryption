@@ -35,7 +35,6 @@ body {
 
 .style-page {
     display: flex;
-    background:linear-gradient(to bottom left, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.033));
     border-radius: 10px;
     animation: rainbowShow 30s linear infinite;
     
@@ -45,10 +44,13 @@ body {
 /*------------------- Configuração Barra apresentação -------------*/
 .bar-presentation {
     display: flex;
+
     align-items: center;
    justify-content: space-between;
    padding-inline: 0.7rem;
 }
+
+
 /*--------------------- Configuração caution text -----------------*/
 .not-found-text {
     display: none;
@@ -63,7 +65,6 @@ body {
 }
 .encryption-input-text{
     flex-grow: 1;
-    
     resize: none;
     letter-spacing: 2px;
     line-height: 1.2rem;
@@ -73,12 +74,17 @@ body {
 .encryption-decoder {
     display: none;
     justify-content: space-between;
-    border-radius: 10px;
+    border-radius: 7px;
     color: #67b400;
     background-color: aliceblue;
 }
 .encryption-decoder-show {
+    flex-grow: 1;
+    padding: 30px;
+    resize: none;
+    letter-spacing: 2px;
     color: #101010;
+    background-color: transparent;
 }
 /*--------------------- Configuração botões -----------------------*/
 .style-btn {
@@ -88,6 +94,7 @@ body {
     transition: 0.1s linear;
     background-color: #67b400;
     box-shadow: 0px 5px 0px #66b4005e;
+    
 }
 .button-container {
     display: flex;
@@ -105,6 +112,7 @@ body {
   gap: 0.3rem;
   padding: 0.5rem;
 }
+
 .encryption-text--caution {
     display: flex;
     justify-content: center;
@@ -125,3 +133,4 @@ body {
     font-weight: 700;
     padding-block: 0.2rem;
 }
+
