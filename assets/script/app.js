@@ -53,3 +53,15 @@ function CopyText() {
         $btnCopy.style.color = "black";
     }, 2000)
 }
+
+// function DeleteCapitalLetter() {
+//     let $patten = /[A-Z,0-9]/g ;
+
+//     if ($patten.test($inputText.value)) {
+      
+
+//     } else {
+//         l("não funcionou");
+//     }
+// }
+

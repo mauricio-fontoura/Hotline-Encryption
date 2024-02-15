@@ -4,18 +4,14 @@
 
 .style-btn:hover {
     cursor: pointer;
-    background-color: #3a2201;
-    box-shadow: 0px 2px 0px #0a110048;
     transform: translateY(3px);
     transition: 0.1s linear;
-   
+    box-shadow: 0px 2px 0px #0a110048;
+    background-color: #7a2f7afe;
 }
 
 /* ---------------------- HEADER ==> Menu  ------------------------*/
 .bar-presentation--menu:hover {
-   
-    
     cursor: pointer;
-    background-color: #0000007e;
-    
+    background-color: #7a2f7afe;
 }

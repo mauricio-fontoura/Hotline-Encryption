@@ -3,7 +3,6 @@ body {
     margin: 0;
      background-color: #1f1f1f;
      color: #ffff;
-     
 }
 /*--------------------- Configuração Estrutura --------------------*/
 .wrapper--container {
@@ -43,12 +42,10 @@ body {
 }
 /*------------------- Configuração Barra apresentação -------------*/
 .bar-presentation {
-   
     display: flex;
     align-items: center;
    justify-content: space-between;
    padding-inline: 0.7rem;
-   background-color: #101010;
 }
 
 .bar-presentation--menu{
@@ -81,18 +78,22 @@ body {
 .encryption-decoder {
     display: none;
     justify-content: space-between;
+    overflow: hidden;
     border-radius: 7px;
     color: #67b400;
     background-color: aliceblue;
 }
 .encryption-decoder-show {
     flex-grow: 1;
-    padding: 30px;
+    text-align: center;
+    margin-inline: auto;
+    padding: 5px;
     resize: none;
     cursor:default;
     letter-spacing: 2px;
     color: #101010;
     background-color: transparent;
+    
 }
 /*--------------------- Configuração botões -----------------------*/
 .style-btn {
@@ -100,9 +101,8 @@ body {
     padding: 0.5rem;
     border-radius: 8px;
     transition: 0.1s linear;
-    background-color: #fe8c00;
-    box-shadow: 0px 5px 0px #b466005e;
-    
+    background-color: #ff60ff;
+    box-shadow: 0px 5px 0px #923f92;
 }
 .button-container {
     display: flex;
@@ -111,7 +111,6 @@ body {
 }
 
 .button-container-copy{
-  background-color: #1f1f1f;
   display: flex;
   margin-inline: auto;
   border-radius: 10px 10px 0 0;
@@ -120,15 +119,13 @@ body {
   gap: 0.3rem;
   padding: 0.5rem;
 }
-
 .encryption-text--caution {
     display: flex;
     justify-content: center;
-    gap: 6px;
-    margin-block-start:8px;
+    gap: 3px;
+    margin-block-start:12px;
     font-size: 0.7rem;
 }
-
 .selection {
     display: flex;
     flex-direction: column;
@@ -142,20 +139,15 @@ body {
     padding-block: 0.2rem;
 }
 .menu-aba {
-   
     display: none;
     flex-direction: column;
-   
     background-color: dodgerblue;
-    
 }
 .menu-aba > button {
     width:max-content ;
     padding-inline: 15px;
-    
     display: flex;
     flex-direction: column;
-    
 }
 #svg1 {
     width: 28px;
