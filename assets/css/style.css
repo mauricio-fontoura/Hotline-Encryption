@@ -3,6 +3,7 @@ body {
     margin: 0;
      background-color: #1f1f1f;
      color: #ffff;
+     
 }
 /*--------------------- Configuração Estrutura --------------------*/
 .wrapper--container {
@@ -36,25 +37,31 @@ body {
 .style-page {
     display: flex;
     border-radius: 10px;
-    animation: rainbowShow 30s linear infinite;
-    
+   
     padding: 1rem;
     gap: 1rem;
 }
 /*------------------- Configuração Barra apresentação -------------*/
 .bar-presentation {
+   
     display: flex;
-
     align-items: center;
    justify-content: space-between;
    padding-inline: 0.7rem;
+   background-color: #101010;
 }
 
+.bar-presentation--menu{
+    display: flex;
+    flex-direction: column;
+}
 
 /*--------------------- Configuração caution text -----------------*/
 .not-found-text {
     display: none;
     text-align: center;
+    flex-grow: 1;
+   
 }
 /*--------------------- Configuração Criptografia -----------------*/
 .style-encryption-page {
@@ -82,6 +89,7 @@ body {
     flex-grow: 1;
     padding: 30px;
     resize: none;
+    cursor:default;
     letter-spacing: 2px;
     color: #101010;
     background-color: transparent;
@@ -92,8 +100,8 @@ body {
     padding: 0.5rem;
     border-radius: 8px;
     transition: 0.1s linear;
-    background-color: #67b400;
-    box-shadow: 0px 5px 0px #66b4005e;
+    background-color: #fe8c00;
+    box-shadow: 0px 5px 0px #b466005e;
     
 }
 .button-container {
@@ -133,4 +141,24 @@ body {
     font-weight: 700;
     padding-block: 0.2rem;
 }
-
+.menu-aba {
+   
+    display: none;
+    flex-direction: column;
+   
+    background-color: dodgerblue;
+    
+}
+.menu-aba > button {
+    width:max-content ;
+    padding-inline: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+#svg1 {
+    width: 28px;
+    height: 28px;
+    padding: 4px;
+}

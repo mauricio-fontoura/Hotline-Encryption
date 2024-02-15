@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="14.460214"
+   height="14.615836"
+   viewBox="0 0 14.460214 14.615836"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   sodipodi:docname="Engrenagem icon 48px.svg"
+   inkscape:export-filename="icon-gear .svg"
+   inkscape:export-xdpi="37.79842"
+   inkscape:export-ydpi="37.79842"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showguides="true"
+     showgrid="false"
+     inkscape:zoom="6.8206342"
+     inkscape:cx="27.636726"
+     inkscape:cy="25.290903"
+     inkscape:window-width="1356"
+     inkscape:window-height="675"
+     inkscape:window-x="5"
+     inkscape:window-y="5"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid3"
+       units="px"
+       originx="-0.73829587"
+       originy="-0.65321469"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect34"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0.62158812,0,1 @ F,0,0,1,0,0.56139141,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0.5135073,0,1 @ F,0,0,1,0,0.64068815,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0.54172965,0,1 @ F,0,0,1,0,0.61548083,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0.6235307,0,1 @ F,0,0,1,0,0.650778,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0.59865188,0,1 @ F,0,0,1,0,0.60988066,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0.57304004,0,1 @ F,0,0,1,0,0.44424201,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <g
+     inkscape:label="Componetes internos"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     transform="translate(-0.73829585,-0.65321469)">
+    <path
+       style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.2;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       d="m 4.2028866,17.227179 3.7829036,-6.782084 6.7228808,1.679442 a 1.5167611,1.5167611 171.74154 0 0 1.138398,-0.165232 l 1.730662,-1.021184 a 1.4044118,1.4044118 127.66882 0 0 0.637113,-0.825256 l 1.928134,-6.7775044 7.527724,0.1174058 2.181008,6.7485756 a 1.3733129,1.3733129 51.58847 0 0 0.597675,0.753766 l 1.42963,0.861958 a 1.4897768,1.4897768 7.8163264 0 0 1.166201,0.160088 l 6.568095,-1.81583 4.016089,6.568811 -4.798135,5.327854 a 1.3341614,1.3341614 109.90606 0 0 -0.341793,0.943882 l 0.07642,1.995294 a 1.6011972,1.6011972 66.780533 0 0 0.452998,1.055933 l 4.775492,4.902929 -3.778823,6.622211 -6.845722,-1.669475 a 1.5255739,1.5255739 171.47452 0 0 -1.141609,0.171133 l -1.513766,0.90082 a 1.6345952,1.6345952 127.53488 0 0 -0.736725,0.958909 l -1.88213,6.639803 -7.616273,0.03842 -2.12164,-6.919272 A 1.5595191,1.5595191 51.95274 0 0 17.468794,36.818323 L 16.052952,35.969198 A 1.4234242,1.4234242 7.7592564 0 0 14.942035,35.817826 L 8.2784426,37.657534 4.4707917,31.352198 9.2453096,26.012124 A 1.3829784,1.3829784 109.29287 0 0 9.59513,25.012795 L 9.4747394,22.868787 A 1.1556549,1.1556549 65.758979 0 0 9.1342403,22.112591 Z"
+       id="path34"
+       inkscape:label="Engrenagem"
+       inkscape:path-effect="#path-effect34"
+       inkscape:original-d="m 4.2028866,17.227179 3.7829036,-6.782084 7.3259368,1.830091 2.749502,-1.622355 2.081749,-7.3174704 7.527724,0.1174058 2.338922,7.2371996 2.418068,1.45791 7.185619,-1.986552 4.016089,6.568811 -5.160661,5.730403 0.120706,3.151657 5.204935,5.343832 -3.778823,6.622211 -7.451499,-1.817207 -2.608845,1.552484 -2.059608,7.265913 -7.616273,0.03842 -2.297138,-7.491622 -2.452272,-1.470706 -7.2514794,2.002014 -3.8076509,-6.305336 5.1564651,-5.767264 -0.1774233,-3.15969 z"
+       inkscape:export-filename="./icon-gear.svg"
+       inkscape:export-xdpi="37.79842"
+       inkscape:export-ydpi="37.79842"
+       transform="matrix(0.35584198,0,0,0.34404443,-0.57080679,-0.28789599)" />
+    <ellipse
+       style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.209936;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="path12"
+       cx="7.7771258"
+       cy="-8.2279348"
+       inkscape:label="Capa bilhas"
+       transform="matrix(-0.02913373,0.99957552,-0.99962905,-0.02723542,0,0)"
+       rx="3.2193716"
+       ry="3.3295882" />
+    <ellipse
+       style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.931767;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.931767, 1.86354;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="circle36"
+       cx="7.9693942"
+       cy="7.9712901"
+       inkscape:label="Bilhas"
+       rx="2.6576579"
+       ry="2.5695462" />
+    <ellipse
+       style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.269791;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="circle37"
+       cx="11.285162"
+       cy="0.18712164"
+       inkscape:label="Cilindro central"
+       transform="matrix(0.71881212,0.69520438,-0.71903568,0.69497316,0,0)"
+       rx="1.8742118"
+       ry="1.8742322" />
+  </g>
+</svg>
