@@ -43,7 +43,9 @@ function DisableEncryption() {
 
     let $cryptografic = $inputText.value;
     $writeDecoder.value = $cryptografic.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u").replace(/ç/g, " ");
+    $inputText.select()
 
+    
 }
 
 function CopyText() {
@@ -69,6 +71,7 @@ function ShowButtonErase() {
 function EraseInputText() {
     $inputText.value = "";
     $btnEraseText.style.opacity = 0;
+    ShowDecoderPage();
 }
 // function DeleteCapitalLetter() {
 //     let $patten = /[A-Z,0-9]/g ;

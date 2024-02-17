@@ -1,7 +1,7 @@
 
 body {
     margin: 0;
-     background-color: #1f1f1f;
+     background-color: #1a1a1a;
      color: #ffff;
 }
 /*--------------------- Configuração Estrutura --------------------*/
@@ -17,7 +17,6 @@ body {
 .wrapper > * {
     flex: 1;
 }
-
 .main {
     flex-grow: 1;
     margin-block: 1rem;
@@ -36,8 +35,6 @@ body {
 .style-page {
     display: flex;
     border-radius: 10px;
-   
-    padding: 1rem;
     gap: 1rem;
 }
 /*------------------- Configuração Barra apresentação -------------*/
@@ -57,11 +54,14 @@ body {
 .not-found-text {
     display: none;
     flex-grow: 1;
-   align-items: center;
     text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: #272727;
 }
 .not-found-text > img {
-    width: 60%;
+    width: 40%;
 }
 /*--------------------- Configuração Criptografia -----------------*/
 .style-encryption-page {
@@ -124,7 +124,7 @@ body {
 .encryption-text--caution {
     display: flex;
     justify-content: center;
-    gap: 3px;
+    gap: 2px;
     margin-block-start:12px;
     font-size: 0.7rem;
 }
@@ -137,6 +137,8 @@ body {
     padding: 2px;
     cursor: pointer;
     opacity: 0;
+    box-shadow: 0px 0px 3px 1px #ff60ff;
+    background-color: #d2d2d2;
 }
 /*--------------------------------- Rodapé --------------------------------------*/
 .credit {
@@ -145,22 +147,6 @@ body {
     letter-spacing: 2px;
     font-weight: 700;
     padding-block: 0.2rem;
-}
-.menu-aba {
-    display: none;
-    flex-direction: column;
-    background-color: dodgerblue;
-}
-.menu-aba > button {
-    width:max-content ;
-    padding-inline: 15px;
-    display: flex;
-    flex-direction: column;
-}
-#svg1 {
-    width: 28px;
-    height: 28px;
-    padding: 4px;
 }
 /*--------------------------- Seleção de Páginas JS ----------------------------*/
 .selection {

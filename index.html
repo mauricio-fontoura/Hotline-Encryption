@@ -18,36 +18,15 @@
     <div class="wrapper--container">
         <header class="bar-presentation">
             <img src="./assets/image/Hot Line logo.svg"  class="bar-logo" alt="Logo">
-            <div class="bar-presentation--menu">
-                <svg  viewBox="0 0 16 16" id="svg1">
-                  <path style="display:inline;fill:none;fill-opacity:1;stroke:#c3c3c3;stroke-width:1.2;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" d="m 4.2028866,17.227179 3.7829036,-6.782084 6.7228808,1.679442 a 1.5167611,1.5167611 171.74154 0 0 1.138398,-0.165232 l 1.730662,-1.021184 a 1.4044118,1.4044118 127.66882 0 0 0.637113,-0.825256 l 1.928134,-6.7775044 7.527724,0.1174058 2.181008,6.7485756 a 1.3733129,1.3733129 51.58847 0 0 0.597675,0.753766 l 1.42963,0.861958 a 1.4897768,1.4897768 7.8163264 0 0 1.166201,0.160088 l 6.568095,-1.81583 4.016089,6.568811 -4.798135,5.327854 a 1.3341614,1.3341614 109.90606 0 0 -0.341793,0.943882 l 0.07642,1.995294 a 1.6011972,1.6011972 66.780533 0 0 0.452998,1.055933 l 4.775492,4.902929 -3.778823,6.622211 -6.845722,-1.669475 a 1.5255739,1.5255739 171.47452 0 0 -1.141609,0.171133 l -1.513766,0.90082 a 1.6345952,1.6345952 127.53488 0 0 -0.736725,0.958909 l -1.88213,6.639803 -7.616273,0.03842 -2.12164,-6.919272 A 1.5595191,1.5595191 51.95274 0 0 17.468794,36.818323 L 16.052952,35.969198 A 1.4234242,1.4234242 7.7592564 0 0 14.942035,35.817826 L 8.2784426,37.657534 4.4707917,31.352198 9.2453096,26.012124 A 1.3829784,1.3829784 109.29287 0 0 9.59513,25.012795 L 9.4747394,22.868787 A 1.1556549,1.1556549 65.758979 0 0 9.1342403,22.112591 Z" id="path34" transform="matrix(0.35584198,0,0,0.34404443,-0.57080679,-0.28789599)"/>
-                  <ellipse style="fill:none;fill-opacity:1;stroke:#c3c3c3;stroke-width:0.209936;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" id="path12" cx="7.7771258" cy="-8.2279348" transform="matrix(-0.02913373,0.99957552,-0.99962905,-0.02723542,0,0)" rx="3.2193716" ry="3.3295882"/>
-                  <ellipse style="fill:none;fill-opacity:1;stroke:#c3c3c3;stroke-width:0.931767;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.931767, 1.86354;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" id="circle36" cx="7.9693942" cy="7.9712901" rx="2.6576579" ry="2.5695462"/>
-                  <ellipse style="fill:none;fill-opacity:1;stroke:#c3c3c3;stroke-width:0.269791;stroke-linecap:butt;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" id="circle37" cx="11.285162" cy="0.18712164" transform="matrix(0.71881212,0.69520438,-0.71903568,0.69497316,0,0)" rx="1.8742118" ry="1.8742322"/>
-              </svg>
-            </div>
-            <!-- <div class="menu-aba">
-                <div class="">
-                    <h1>Tema</h1>
-                    <button>Dark</button>
-                </div>
-                <div>
-                    <h1>Tamanho da fonte</h1>
-                    <button>Pequena</button>
-                </div>
-                <div>
-                    <h1>Sistema</h1>
-                    <p>V.0.1</p>
-                </div>
-                
-              </div> -->
         </header>
 
         <main class="wrapper main">
             <div class="layout-grid">  
                 <div class="column style-page">
                     <section class="style-encryption-page encryption-text">
-                        <button onclick="EraseInputText()" class="encryption-button-erase" id="erase-text-btn">ES</button>
+                        <button onclick="EraseInputText()" class="encryption-button-erase" id="erase-text-btn">
+                            <img src="./assets/image/erase-icon.svg" alt="">
+                        </button>
                         <textarea class="encryption-input-text"  id="input-text" placeholder="Digite seu texto aqui" spellcheck="false"></textarea>
 
                         <div class="button-container">
@@ -62,7 +41,7 @@
                 </div>
                 
                 <div class="column style-page">
-                    <section class="not-found-text selection" id="page-not-found"> <!-- teste-->
+                    <section class="not-found-text selection" id="page-not-found">      
                         <img src="./assets/image/lupa.svg" alt="">
                         <div>
                             <h1>Nenhuma mensagem encontrada</h1>
@@ -70,14 +49,11 @@
                         </div>
                     </section>
                     <section class="style-encryption-page encryption-decoder" id="page-decoder">
-
                         <textarea class="encryption-decoder-show" id="write-encryption" spellcheck="false" readonly></textarea>
-
-                        <div class="button-container-copy">
-                            <button onclick="CopyText()" class="style-btn" id="button-copy">Copiar</button>
-                        </div>
+                            <div class="button-container-copy">
+                                <button onclick="CopyText()" class="style-btn" id="button-copy">Copiar</button>
+                            </div>
                     </section>
-
                 </div>
            </div>
         </main>

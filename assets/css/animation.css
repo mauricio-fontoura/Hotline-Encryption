@@ -13,5 +13,6 @@
 /* ---------------------- HEADER ==> Menu  ------------------------*/
 .bar-presentation--menu:hover {
     cursor: pointer;
-    background-color: #7a2f7afe;
+    background-color: #515151;
+    border-radius: 50px;
 }
