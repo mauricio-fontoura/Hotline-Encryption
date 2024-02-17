@@ -56,9 +56,12 @@ body {
 /*--------------------- Configuração caution text -----------------*/
 .not-found-text {
     display: none;
-    text-align: center;
     flex-grow: 1;
-   
+   align-items: center;
+    text-align: center;
+}
+.not-found-text > img {
+    width: 60%;
 }
 /*--------------------- Configuração Criptografia -----------------*/
 .style-encryption-page {
@@ -109,7 +112,6 @@ body {
     justify-content: space-evenly;
     margin-block-start: 1rem;
 }
-
 .button-container-copy{
   display: flex;
   margin-inline: auto;
@@ -126,11 +128,17 @@ body {
     margin-block-start:12px;
     font-size: 0.7rem;
 }
-.selection {
-    display: flex;
-    flex-direction: column;
+.encryption-button-erase {
+    max-width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin-block-end: 10px;
+    margin-left: auto;
+    padding: 2px;
+    cursor: pointer;
+    opacity: 0;
 }
-/*--------------------------- Rodapé ------------------------------*/
+/*--------------------------------- Rodapé --------------------------------------*/
 .credit {
     display: flex;
     text-align: center;
@@ -153,4 +161,9 @@ body {
     width: 28px;
     height: 28px;
     padding: 4px;
+}
+/*--------------------------- Seleção de Páginas JS ----------------------------*/
+.selection {
+    display: flex;
+    flex-direction: column;
 }

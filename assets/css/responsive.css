@@ -3,25 +3,17 @@
         flex-direction: column;
         transition: 1s linear;
     }
-}
-@media (max-width:450px) {
-    .bar-logo {
-        width: 48px;
-    }
     .credit {
         font-size: 12px;
     }
 }
-@media (max-width:375px) {
-    
+
+@media (max-width:375px) {  
     h1 {
         font-size: 0.9rem;
     }
     p {
         font-size: 0.8rem;
-    }
-    .encryption-text--caution {
-        margin-inline: 15px;
     }
     .encryption-text--caution > img {
         width: 16px;

@@ -9,9 +9,11 @@ let $notFound = document.getElementById('page-not-found');
 let $pageDecoder = document.getElementById('page-decoder');
 let $writeDecoder = document.getElementById('write-encryption');
 let $btnCopy = document.getElementById('button-copy');
+let $btnEraseText = document.getElementById('erase-text-btn');
 //-------------------------------------------------------------------
+ShowButtonErase();
 
-function teste() {
+function ShowDecoderPage() {
    
         if ($inputText.value === '') {
             $pageDecoder.classList.remove('selection');
@@ -23,7 +25,6 @@ function teste() {
 }
 
 function WriteDecoder() {
-
         $writeDecoder.value = $inputText.value;
 }
 
@@ -31,7 +32,7 @@ function EnableEncryption() {
         if ($inputText.value === ""){
             $inputText.attributes.item("disabled");
         } else {
-            teste();
+            ShowDecoderPage();
             WriteDecoder();
             let $cryptografic = $inputText.value;
             $writeDecoder.value = $cryptografic.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat").replace(/ /g, "ç");
@@ -54,6 +55,21 @@ function CopyText() {
     }, 2000)
 }
 
+function ShowButtonErase() {
+    addEventListener('input', ()=> {
+        if ($inputText.value === "") {
+            EraseInputText();
+        } else {
+            $btnEraseText.style.opacity = 1;
+        }
+        
+    })
+}
+
+function EraseInputText() {
+    $inputText.value = "";
+    $btnEraseText.style.opacity = 0;
+}
 // function DeleteCapitalLetter() {
 //     let $patten = /[A-Z,0-9]/g ;
 
