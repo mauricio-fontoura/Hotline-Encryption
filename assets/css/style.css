@@ -1,8 +1,7 @@
-
 body {
-    margin: 0;
-     background-color: #1a1a1a;
-     color: #ffff;
+    background-color: var(--secundary-color);
+    font-family: var(--font-family-1);
+    color: var(--font-color-1);
 }
 /*--------------------- Configuração Estrutura --------------------*/
 .wrapper--container {
@@ -10,7 +9,6 @@ body {
     flex-direction: column;
     height: 100dvh;
 }
-
 .wrapper {
     display: flex;
 }
@@ -25,31 +23,28 @@ body {
     display: flex;
     gap: 1rem;
 }
-
 .column {
     display: flex;
     flex: 1;
     margin-inline: 2rem;
 }
-
 .style-page {
     display: flex;
     border-radius: 10px;
     gap: 1rem;
+    
 }
 /*------------------- Configuração Barra apresentação -------------*/
 .bar-presentation {
     display: flex;
     align-items: center;
-   justify-content: space-between;
-   padding-inline: 0.7rem;
+    justify-content: space-between;
+    padding-inline: 0.7rem;
 }
-
-.bar-presentation--menu{
+.bar-presentation--menu {
     display: flex;
     flex-direction: column;
 }
-
 /*--------------------- Configuração caution text -----------------*/
 .not-found-text {
     display: none;
@@ -58,32 +53,40 @@ body {
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
-    background-color: #272727;
+    padding: 0.5rem;
+    box-shadow: 0px 0px 9px 2px var( --shadow-color-1);
 }
-.not-found-text > img {
+.not-found-text>img {
     width: 40%;
+    transform: perspective(20rem);
+    animation: lupa 2s linear infinite;
+}
+.encryption-text--caution {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-block-start: 12px;
+    font-size: 0.7rem;
 }
 /*--------------------- Configuração Criptografia -----------------*/
 .style-encryption-page {
     display: flex;
     flex-direction: column;
     text-align: center;
-    flex-grow: 1;
+    flex: 1;
 }
-.encryption-input-text{
+.encryption-input-text {
     flex-grow: 1;
     resize: none;
+    font-family: var(--font-family-1);
     letter-spacing: 2px;
     line-height: 1.2rem;
-    color: #ffffff;
-    background-color: #1f1f1f00;
+    color: var(--font-color-1);
+    background-color: var(--secundary-color);
 }
 .encryption-decoder {
     display: none;
-    justify-content: space-between;
-    overflow: hidden;
     border-radius: 7px;
-    color: #67b400;
     background-color: aliceblue;
 }
 .encryption-decoder-show {
@@ -92,11 +95,10 @@ body {
     margin-inline: auto;
     padding: 5px;
     resize: none;
-    cursor:default;
+    cursor: default;
+    font-family: var(--font-family-1);
     letter-spacing: 2px;
-    color: #101010;
     background-color: transparent;
-    
 }
 /*--------------------- Configuração botões -----------------------*/
 .style-btn {
@@ -104,29 +106,25 @@ body {
     padding: 0.5rem;
     border-radius: 8px;
     transition: 0.1s linear;
-    background-color: #ff60ff;
-    box-shadow: 0px 5px 0px #923f92;
+    background-color: var(--primary-color);
+    box-shadow: 0px 3px 0px 2px var(--ternary--color);
+    font-family: var(--font-family-1);
+    font-size: 0.9rem;
 }
 .button-container {
     display: flex;
     justify-content: space-evenly;
     margin-block-start: 1rem;
 }
-.button-container-copy{
-  display: flex;
-  margin-inline: auto;
-  border-radius: 10px 10px 0 0;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0.5rem;
-}
-.encryption-text--caution {
+.button-container-copy {
     display: flex;
-    justify-content: center;
-    gap: 2px;
-    margin-block-start:12px;
-    font-size: 0.7rem;
+    margin-inline: auto;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--secundary-color);
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.5rem;
 }
 .encryption-button-erase {
     max-width: 20px;
@@ -137,19 +135,24 @@ body {
     padding: 2px;
     cursor: pointer;
     opacity: 0;
-    box-shadow: 0px 0px 3px 1px #ff60ff;
-    background-color: #d2d2d2;
 }
 /*--------------------------------- Rodapé --------------------------------------*/
 .credit {
     display: flex;
-    text-align: center;
+    margin-inline: auto;
+    gap: 2px;
     letter-spacing: 2px;
     font-weight: 700;
     padding-block: 0.2rem;
+    font-family: var(--font-family-2);
+}
+.credit>a {
+    color: var(--primary-color);
 }
 /*--------------------------- Seleção de Páginas JS ----------------------------*/
 .selection {
     display: flex;
     flex-direction: column;
+    animation: showPage .8s linear;
+    transition: .10s linear;
 }

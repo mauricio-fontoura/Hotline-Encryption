@@ -2,19 +2,17 @@
 let l = new Function('mensage', 'console.log(mensage)');
 //-------------------------------------------------------------------
 
-Headers['Variables']
-
 let $inputText = document.getElementById('input-text');
 let $notFound = document.getElementById('page-not-found');
 let $pageDecoder = document.getElementById('page-decoder');
 let $writeDecoder = document.getElementById('write-encryption');
-let $btnCopy = document.getElementById('button-copy');
-let $btnEraseText = document.getElementById('erase-text-btn');
+const $btnCopy = document.getElementById('button-copy');
+const $btnEraseText = document.getElementById('erase-text-btn');
 //-------------------------------------------------------------------
 ShowButtonErase();
+CharacterPattern();
 
-function ShowDecoderPage() {
-   
+function ShowDecoderPage() {  
         if ($inputText.value === '') {
             $pageDecoder.classList.remove('selection');
             $notFound.classList.add('selection');
@@ -24,28 +22,35 @@ function ShowDecoderPage() {
         }
 }
 
-function WriteDecoder() {
-        $writeDecoder.value = $inputText.value;
-}
+function EnableEncryption() { 
+    if ($inputText.value === "") {
 
-function EnableEncryption() {
-        if ($inputText.value === ""){
-            $inputText.attributes.item("disabled");
-        } else {
-            ShowDecoderPage();
-            WriteDecoder();
-            let $cryptografic = $inputText.value;
-            $writeDecoder.value = $cryptografic.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat").replace(/ /g, "ç");
-        }
+    } else {
+        ChangeLetters();
+        ShowDecoderPage();
+    }
 }
 
 function DisableEncryption() {
 
-    let $cryptografic = $inputText.value;
-    $writeDecoder.value = $cryptografic.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u").replace(/ç/g, " ");
-    $inputText.select()
+    if ( $inputText.value === "") {
 
-    
+    } else {
+        StandardLetters();
+        ShowDecoderPage();
+    }
+}
+
+function  ChangeLetters (letter) {
+    letter = $inputText.value
+    $writeDecoder.value = letter.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat").replace(/ /g, "cq"); 
+
+    return $writeDecoder.value
+}
+
+function StandardLetters (letter) {
+    letter = $inputText.value;
+    $writeDecoder.value = letter.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u").replace(/cq/g, " ");
 }
 
 function CopyText() {
@@ -64,23 +69,29 @@ function ShowButtonErase() {
         } else {
             $btnEraseText.style.opacity = 1;
         }
-        
     })
 }
 
 function EraseInputText() {
+
     $inputText.value = "";
     $btnEraseText.style.opacity = 0;
-    ShowDecoderPage();
+    
 }
-// function DeleteCapitalLetter() {
-//     let $patten = /[A-Z,0-9]/g ;
 
-//     if ($patten.test($inputText.value)) {
-      
+function CharacterPattern() {
 
-//     } else {
-//         l("não funcionou");
-//     }
-// }
+    addEventListener('keypress', function(active) {
+        if (RestrictChar(active)) {
+            active.preventDefault();
+        }
+    })
+}
 
+function RestrictChar(charCode) {
+    let $char = charCode.key;
+    let $pattenChar = new RegExp('[^a-z ]');
+    if ($pattenChar.test($char)){   
+        return true;
+    }
+}
