@@ -90,7 +90,7 @@ function CharacterPattern() {
 
 function RestrictChar(charCode) {
     let $char = charCode.key;
-    let $pattenChar = new RegExp('[^a-z ]');
+    let $pattenChar = new RegExp('[^a-z ]+$');
     if ($pattenChar.test($char)){   
         return true;
     }
