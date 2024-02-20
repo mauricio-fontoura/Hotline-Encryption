@@ -26,7 +26,7 @@ function EnableEncryption() {
     if ($inputText.value === "") {
 
     } else {
-         $inputtext.value = "";   
+         $inputText.value = "";   
         ChangeLetters();
         ShowDecoderPage();
     }
@@ -37,7 +37,7 @@ function DisableEncryption() {
     if ( $inputText.value === "") {
 
     } else {
-        $inputtext.value = ""; 
+        $inputText.value = ""; 
         StandardLetters();
         ShowDecoderPage();
     }
