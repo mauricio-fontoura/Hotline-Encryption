@@ -30,7 +30,7 @@
                         <button onclick="EraseInputText()" class="encryption-button-erase" id="erase-text-btn">
                             <img src="./assets/image/erase-icon.svg" alt="">
                         </button>
-                        <textarea class="encryption-input-text"  id="input-text" placeholder="Digite seu texto aqui" spellcheck="false"></textarea>
+                        <textarea class="encryption-input-text"  id="input-text" autocomplete="off" placeholder="Digite seu texto aqui" spellcheck="false"></textarea>
                         <div class="button-container">
                             <button onclick="EnableEncryption()" class="style-btn">Criptografia</button>
                             <button onclick="DisableEncryption()" class="style-btn" >Descriptografia</button>
@@ -51,7 +51,7 @@
                         </div>
                     </section>
                     <section class="style-encryption-page encryption-decoder" id="page-decoder">
-                        <textarea class="encryption-decoder-show" id="write-encryption" spellcheck="false" readonly></textarea>
+                        <textarea class="encryption-decoder-show" id="write-encryption" autocomplete="off" spellcheck="false" readonly></textarea>
                             <div class="button-container-copy">
                                 <button onclick="CopyText()" class="style-btn" id="button-copy">Copiar</button>
                             </div>
